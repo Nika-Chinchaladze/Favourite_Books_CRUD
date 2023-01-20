@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Playfair Display";
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: #86E5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: #0081C9;
+    font-weight: bold;
+}
+i {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* HEAD SECTION */
+.mainDiv {
+    width: 50%;
+    height: 90%;
+    background-color: azure;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+.searchDiv {
+    width: 85%;
+    margin: auto;
+    margin-top: 5px;
+}
+.searchDiv * {
+    margin: 0 5px;
+}
+.searchIcon {
+    font-size: 2rem;
+    color: #0081C9;
+}
+.searchBar {
+    width: 90%;
+    border: 1px solid #0081C9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* CONTENT SECTION */
+.contentDiv {
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.contentDiv::-webkit-scrollbar {
+    display: none;
+}
+.infoDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D7E9B9;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 17px 0;
+}
+.bookInfo {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+.editDiv {
+    padding: 0 5px;
+    border-radius: 10px;
+    border: 1px solid #0081C9;
+    color: #243763;
+}
+.editDiv:hover {
+    background-color: #0081C9;
+    color: azure;
+}
+.trashDiv {
+    padding: 0 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid red;
+    color: #243763;
+}
+.trashDiv:hover {
+    background-color: red;
+    color: azure;
+}
+
+/* ADD BUTTON SECTION  */
+.addDiv {
+    margin-top: 10px;
+    text-align: center;
+}
+.addButton {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius: 10px;
+	border:1px solid #124d77;
+	display:inline-block;
+    width: 40%;
+	cursor:pointer;
+	color:#ffffff;
+	padding: 5px 0;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+	text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.addButton:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.addButton:active {
+	position:relative;
+	top:2px;
+}
+
+/* MEDIA QUERY FOR IPAD */
+@media (max-width: 1024px) {
+    .mainDiv {
+        width: 90%;
+    }
+    .contentDiv {
+        height: 80%;
+    }
+    .bookInfo {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* MEDIA QUERY FOR PHONE */
+@media (max-width: 576px) {
+    .searchDiv {
+        width: 98%;
+    }
+    .searchIcon {
+        font-size: 1.4rem;
+    }
+    .mainDiv {
+        width: 98%;
+    }
+    .contentDiv {
+        width: 96%;
+        height: 75%;
+    }
+    i {
+        font-size: 1rem;
+    }
+    .editDiv, .trashDiv {
+        padding: 0;
+        margin: 0;
+    }
+    .bookInfo {
+        font-size: 0.8rem;
+    }
+    .addDiv {
+        margin-top: 20px;
+    }
+}

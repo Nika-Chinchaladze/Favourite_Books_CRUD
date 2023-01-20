@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Playfair Display";
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: #86E5FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form * {
+    margin: 20px 0;
+}
+h1 {
+    color: #243763;
+    margin-bottom: 15px;
+}
+/* CENTRAL PART */
+.centralDiv {
+    width: 70%;
+    height: 40%;
+    border-radius: 20px;
+    background-color: azure;
+    margin-top: 15px;
+}
+.myInput {
+    display: inline-block;
+    width: 270px;
+    margin: 0 20px;
+    padding: 10px 0;
+    border: 1px solid #0081C9;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.submitButton {
+    width: 50%;
+    border: 2px solid #0081C9;
+    border-radius: 10px;
+    color: #0081C9;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 0;
+}
+.submitButton:hover {
+    color: azure;
+    background-color: #0081C9;
+}
+.submitButton:active {
+    position: relative;
+    top: 2px;
+}
+
+/* MEDIA QUERY FOR IPAD  */
+@media (max-width: 1024px) {
+    .centralDiv {
+        width: 80%;
+    }
+    .inputDiv {
+        flex-direction: column!important;
+    }
+    .myInput {
+        width: 550px;
+        margin: 10px 0;
+    }
+}
+
+/* MEDIA QUERY FOR PHONE */
+@media (max-width: 576px) {
+    .centralDiv {
+        width: 94%;
+    }
+    .myInput {
+        width: 300px;
+        margin: 5px 0;
+    }
+    .submitButton {
+        width: 70%;
+        padding: 2px 0;
+        margin: 5px 0;
+    }
+}
